@@ -4,10 +4,8 @@
   "homepage": "https://PoulAndre.github.io/quiz-app",
   "scripts": {
     "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "export": "next export",
-  "deploy": "npm run build && npm run export && gh-pages -d out"
+    "build": "next build",
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "next": "15.3.0",
@@ -17,7 +15,6 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.3",
     "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.3"
   }
