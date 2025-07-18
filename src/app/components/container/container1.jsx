@@ -42,8 +42,8 @@ function Container1() {
     },
     {
       spørsmål: "Hva heter planeten som ligger nærmest sola?",
-      alternativer: ["Merkus", "Venus", "Jupiter", "Mars"],
-      riktig: "Merkus",
+      alternativer: ["Merkur", "Venus", "Jupiter", "Mars"],
+      riktig: "Merkur",
     },
     {
       spørsmål: "Hva heter verdens lengste elv?",
@@ -74,7 +74,7 @@ function Container1() {
         <p className="text-xl font-mono">Du har fullført quizen</p>
         
         {poengsum !== maxScore ? (
-          <p className="text-3xl font-mono mt-5">Du fikk {poengsum} av {spørsmålListe.length} riktige!!</p>
+          <p className="text-3xl font-mono text-center mt-5">Du fikk {poengsum} av {spørsmålListe.length} riktige!!</p>
         ) : (
           <p className="text-3xl font-mono text-center mt-5">Du fikk alt riktig!! - {poengsum} av {spørsmålListe.length}!!</p>
         )
@@ -124,7 +124,7 @@ function Container1() {
       <div className="relative flex flex-col rounded-xl border-gray-50 bg-gray-100 w-1/3 h-80 p-4
                 max-sm:w-11/12 max-sm:h-auto">
         <div className="absolute top-2 right-0 -translate-x-0 -translate-y-1/2 bg-white rounded-l-sm h-32 w-0">
-          <div className="absolute flex bg-gray-100 top-15 right-2 h-10 w-25 rounded-sm items-center justify-center">
+          <div className="absolute flex top-12 -right-3 h-13 w-25 items-center justify-center">
             <p className="font-bold font-mono text-center text-2xl text-gray-500">
               {nåværendeSpmIndex + 1}/{spørsmålListe.length}
             </p>
@@ -136,7 +136,7 @@ function Container1() {
         </div>
 
         <div className="flex mt-4 h-10 justify-center">
-          <p className="flex font-mono justify-centers text-xl">{nåværendeSpm.spørsmål}</p>
+          <p className="flex font-mono text-center text-xl">{nåværendeSpm.spørsmål}</p>
         </div>
 
         <div className="flex bg-gray-100 rounded-xl border-2 border-gray-200 h-full w-auto m-5 justify-center items-center">
